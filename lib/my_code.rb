@@ -10,7 +10,7 @@ return new
 end
 
 
-def reduce(source_array, starting_point = 0)
+def reduce(source_array, starting_point = nil)
    i = 0
    if starting_point == 0
      start = 0
