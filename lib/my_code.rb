@@ -13,14 +13,14 @@ end
 def reduce(source_array, starting_point = 0)
    i = 0
    if starting_point == 0
-     start = source_array[0]
+     store = source_array[0]
      i = 1
    else
-     start = starting_point
+     store = starting_point
    end
    while i < source_array.length
-     start = yield(start, source_array[i])
+     store = yield(store, source_array[i])
      i += 1
    end
-   return start
+   return store
  end
