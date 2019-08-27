@@ -14,7 +14,6 @@ def reduce(source_array, starting_point = 0)
    i = 0
    if starting_point == 0
      start = 0
-     i = 1
    else
      start = starting_point
    end
