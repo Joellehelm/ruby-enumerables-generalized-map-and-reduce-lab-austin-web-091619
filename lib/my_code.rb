@@ -13,7 +13,7 @@ end
 def reduce(source_array, starting_point = 1)
    i = 0
    if starting_point == 1
-     start = source_array.first
+     start = 0
    else
      start = starting_point
    end
