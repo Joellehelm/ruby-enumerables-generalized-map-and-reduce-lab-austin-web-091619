@@ -10,12 +10,12 @@ return new
 end
 
 
-def reduce(source_array, starting_point = 0)
+def reduce(source_array, starting_point)
    i = 0
-   if starting_point == 0
-     start = source_array[0]
-   else
+   if starting_point
      start = starting_point
+   else
+     start = 0
    end
    while i < source_array.length
      start = yield(start, source_array[i])
