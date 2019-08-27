@@ -10,9 +10,9 @@ return new
 end
 
 
-def reduce(source_array, starting_point = 1)
+def reduce(source_array, starting_point = 0)
    i = 0
-   if starting_point == 1
+   if starting_point == 0
      start = 0
    else
      start = starting_point
