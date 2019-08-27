@@ -10,10 +10,10 @@ return new
 end
 
 
-def reduce(source_array, starting_point = nil)
+def reduce(source_array, starting_point = 0)
    i = 0
    if starting_point == 0
-     start = 0
+     start = source_array.first
    else
      start = starting_point
    end
@@ -22,4 +22,4 @@ def reduce(source_array, starting_point = nil)
      i += 1
    end
    return start
-end
+ end
